@@ -1,0 +1,73 @@
+Read1 before filtering:
+total reads: 269262
+total bases: 4293030215
+Q20 bases: 4244288508(98.8646%)
+Q30 bases: 4178050710(97.3217%)
+
+Read1 after filtering:
+total reads: 269262
+total bases: 4293030215
+Q20 bases: 4244288508(98.8646%)
+Q30 bases: 4178050710(97.3217%)
+
+Filtering result:
+reads passed filter: 269262
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+
+Duplication rate (may be overestimated since this is SE data): 0.0207976%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+/usr/local/bin/fastp -i /data/users/jimhof/assembly_annotation_course/00_Sequencing_Data/Etna-2/ERR11437333.fastq.gz -o /data/users/jimhof/assembly_annotation_course/02_FastP/WGS.fq.gz -A -Q -L 
+fastp v0.23.2, time used: 142 seconds
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 22620680
+total bases: 2284688680
+Q20 bases: 2016311482(88.2532%)
+Q30 bases: 1740798381(76.1941%)
+
+Read2 before filtering:
+total reads: 22620680
+total bases: 2284688680
+Q20 bases: 2046996125(89.5963%)
+Q30 bases: 1848457564(80.9063%)
+
+Read1 after filtering:
+total reads: 20698307
+total bases: 1945700907
+Q20 bases: 1875886415(96.4119%)
+Q30 bases: 1627174505(83.6292%)
+
+Read2 after filtering:
+total reads: 20698307
+total bases: 2008106603
+Q20 bases: 1944907839(96.8528%)
+Q30 bases: 1765352343(87.9113%)
+
+Filtering result:
+reads passed filter: 41396614
+reads failed due to low quality: 299154
+reads failed due to too many N: 274
+reads failed due to too short: 3545318
+reads with adapter trimmed: 3329861
+bases trimmed due to adapters: 99820741
+
+Duplication rate: 6.60611%
+
+Insert size peak (evaluated by paired-end reads): 125
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+/usr/local/bin/fastp -i /data/users/jimhof/assembly_annotation_course/00_Sequencing_Data/RNAseq_Sha/ERR754081_1.fastq.gz -I /data/users/jimhof/assembly_annotation_course/00_Sequencing_Data/RNAseq_Sha/ERR754081_2.fastq.gz -o /data/users/jimhof/assembly_annotation_course/02_FastP/WTS.R1.fq.gz -O /data/users/jimhof/assembly_annotation_course/02_FastP/WTS.R2.fq.gz --detect_adapter_for_pe --trim_poly_g -3 --length_required 50 
+fastp v0.23.2, time used: 86 seconds
